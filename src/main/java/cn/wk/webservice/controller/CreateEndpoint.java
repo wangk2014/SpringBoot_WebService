@@ -19,12 +19,6 @@ public class CreateEndpoint {
 
     private static final String NAMESPACE_URI = "http://www.wk.cn/webservice";
 
-//    private CountryRepository countryRepository;
-//
-//    @Autowired
-//    public CreateEndpoint(CountryRepository countryRepository) {
-//        this.countryRepository = countryRepository;
-//    }
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "createSuspectIris")
     @ResponsePayload

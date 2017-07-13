@@ -1,8 +1,13 @@
 # SpringBoot_WebService
 ## A simple demo which combines SpringBoot with webservice.
 
+## Get wsdl file
+http://127.0.0.1:8844/ws/irisking.wsdl
+
+--------
+
 ## Test
-### Post (Xml(test/xml))
+### Request Post Xml(test/xml)
 http://127.0.0.1:8844/ws
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -31,7 +36,7 @@ xmlns:gs="http://www.wk.cn/webservice">
 
 -----
 
-### Post (Xml(test/xml))
+### Request Post Xml(test/xml)
 http://127.0.0.1:8844/ws
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
