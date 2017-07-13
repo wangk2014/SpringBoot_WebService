@@ -1,13 +1,9 @@
-# SpringBoot_WebService
-A simple demo which combines SpringBoot with webservice.
+#SpringBoot_WebService
 
-# CompilerLearning
-Combine theory with practice during  this time reading &lt;&lt;principles of compiler design>>.
-##
+##A simple demo which combines SpringBoot with webservice.
 
-
-## Test
-#  Post (Xml(test/xml))
+##Test
+###Post (Xml(test/xml))
 http://127.0.0.1:8844/ws
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -22,7 +18,7 @@ xmlns:gs="http://www.wk.cn/webservice">
 </soapenv:Body>
 </soapenv:Envelope>
 
-#  Response 
+###Response 
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 <SOAP-ENV:Header/>
@@ -34,8 +30,9 @@ xmlns:gs="http://www.wk.cn/webservice">
 </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 
+-----
 
-#  Post (Xml(test/xml))
+###Post (Xml(test/xml))
 http://127.0.0.1:8844/ws
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -51,7 +48,7 @@ xmlns:gs="http://www.wk.cn/webservice">
 </soapenv:Body>
 </soapenv:Envelope>
 
-#  Response 
+###Response 
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 <SOAP-ENV:Header/>
@@ -62,5 +59,4 @@ xmlns:gs="http://www.wk.cn/webservice">
 </ns2:WSResultDTO>
 </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
-
 
