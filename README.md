@@ -1,9 +1,8 @@
-#SpringBoot_WebService
+# SpringBoot_WebService
+## A simple demo which combines SpringBoot with webservice.
 
-##A simple demo which combines SpringBoot with webservice.
-
-##Test
-###Post (Xml(test/xml))
+## Test
+### Post (Xml(test/xml))
 http://127.0.0.1:8844/ws
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -18,7 +17,7 @@ xmlns:gs="http://www.wk.cn/webservice">
 </soapenv:Body>
 </soapenv:Envelope>
 
-###Response 
+### Response 
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 <SOAP-ENV:Header/>
@@ -32,7 +31,7 @@ xmlns:gs="http://www.wk.cn/webservice">
 
 -----
 
-###Post (Xml(test/xml))
+### Post (Xml(test/xml))
 http://127.0.0.1:8844/ws
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
@@ -48,7 +47,7 @@ xmlns:gs="http://www.wk.cn/webservice">
 </soapenv:Body>
 </soapenv:Envelope>
 
-###Response 
+### Response 
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
 <SOAP-ENV:Header/>
