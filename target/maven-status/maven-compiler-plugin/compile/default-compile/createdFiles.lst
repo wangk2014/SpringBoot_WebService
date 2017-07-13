@@ -1,0 +1,7 @@
+cn/wk/webservice/controller/CreateEndpoint.class
+cn/wk/webservice/model/ObjectFactory.class
+cn/wk/webservice/WebserviceApplication.class
+cn/wk/webservice/model/WSResultDTO.class
+cn/wk/webservice/model/CreateSuspectIris.class
+cn/wk/webservice/config/WebServiceConfig.class
+cn/wk/webservice/model/CreateMatchedInfo.class

@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.irisking.com/webservice"
+           targetNamespace="http://www.wk.cn/webservice" elementFormDefault="qualified">
+
+    <xs:element name="createSuspectIris">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="xmlData" type="xs:string"/>
+                <xs:element name="operName" type="xs:string"/>
+                <xs:element name="password" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="createMatchedInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="suspectID" type="xs:string"/>
+                <xs:element name="matchedSuspectID" type="xs:string"/>
+                <xs:element name="operName" type="xs:string"/>
+                <xs:element name="password" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="WSResultDTO">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="errorCode" type="xs:int"/>
+                <xs:element name="errorDescriptiion" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
