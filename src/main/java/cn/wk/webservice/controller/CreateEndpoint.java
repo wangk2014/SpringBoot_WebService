@@ -1,8 +1,11 @@
 package cn.wk.webservice.controller;
 
-import cn.wk.webservice.model.CreateMatchedInfo;
-import cn.wk.webservice.model.CreateSuspectIris;
-import cn.wk.webservice.model.WSResultDTO;
+import cn.wk.webservice.model.CreateMatchedInfoRequest;
+import cn.wk.webservice.model.CreateMatchedInfoResponse;
+import cn.wk.webservice.model.CreateSuspectIrisRequest;
+import cn.wk.webservice.model.CreateSuspectIrisResponse;
+
+import org.springframework.stereotype.Component;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -20,10 +23,11 @@ public class CreateEndpoint {
     private static final String NAMESPACE_URI = "http://www.wk.cn/webservice";
 
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "createSuspectIris")
-    @ResponsePayload
-    public WSResultDTO createSuspectIris(@RequestPayload CreateSuspectIris request) {
-        WSResultDTO response = new WSResultDTO();
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "createSuspectIrisRequest")
+
+    public @ResponsePayload
+    CreateSuspectIrisResponse createSuspectIris(@RequestPayload CreateSuspectIrisRequest request) {
+        CreateSuspectIrisResponse response = new CreateSuspectIrisResponse();
 
         System.out.println(request.getXmlData());
         System.out.println(request.getOperName());
@@ -34,10 +38,10 @@ public class CreateEndpoint {
         return response;
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "createMatchedInfo")
-    @ResponsePayload
-    public WSResultDTO createMatchedInfo(@RequestPayload CreateMatchedInfo request) {
-        WSResultDTO response = new WSResultDTO();
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "createMatchedInfoRequest")
+    public @ResponsePayload
+    CreateMatchedInfoResponse createMatchedInfo(@RequestPayload CreateMatchedInfoRequest request) {
+        CreateMatchedInfoResponse response = new CreateMatchedInfoResponse();
 
         System.out.println(request.getMatchedSuspectID());
         System.out.println(request.getOperName());

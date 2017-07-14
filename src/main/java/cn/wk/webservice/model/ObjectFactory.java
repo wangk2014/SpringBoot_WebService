@@ -30,27 +30,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link WSResultDTO }
+     * Create an instance of {@link CreateSuspectIrisRequest }
      * 
      */
-    public WSResultDTO createWSResultDTO() {
-        return new WSResultDTO();
+    public CreateSuspectIrisRequest createCreateSuspectIrisRequest() {
+        return new CreateSuspectIrisRequest();
     }
 
     /**
-     * Create an instance of {@link CreateSuspectIris }
+     * Create an instance of {@link CreateMatchedInfoRequest }
      * 
      */
-    public CreateSuspectIris createCreateSuspectIris() {
-        return new CreateSuspectIris();
+    public CreateMatchedInfoRequest createCreateMatchedInfoRequest() {
+        return new CreateMatchedInfoRequest();
     }
 
     /**
-     * Create an instance of {@link CreateMatchedInfo }
+     * Create an instance of {@link CreateMatchedInfoResponse }
      * 
      */
-    public CreateMatchedInfo createCreateMatchedInfo() {
-        return new CreateMatchedInfo();
+    public CreateMatchedInfoResponse createCreateMatchedInfoResponse() {
+        return new CreateMatchedInfoResponse();
+    }
+
+    /**
+     * Create an instance of {@link CreateSuspectIrisResponse }
+     * 
+     */
+    public CreateSuspectIrisResponse createCreateSuspectIrisResponse() {
+        return new CreateSuspectIrisResponse();
     }
 
 }

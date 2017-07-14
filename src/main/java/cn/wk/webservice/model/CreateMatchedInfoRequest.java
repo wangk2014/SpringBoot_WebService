@@ -37,8 +37,8 @@ import javax.xml.bind.annotation.XmlType;
     "operName",
     "password"
 })
-@XmlRootElement(name = "createMatchedInfo", namespace = "http://www.wk.cn/webservice")
-public class CreateMatchedInfo {
+@XmlRootElement(name = "createMatchedInfoRequest", namespace = "http://www.wk.cn/webservice")
+public class CreateMatchedInfoRequest {
 
     @XmlElement(namespace = "http://www.wk.cn/webservice", required = true)
     protected String suspectID;

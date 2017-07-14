@@ -18,9 +18,11 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="xmlData" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="operName" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;sequence>
+ *           &lt;element name="xmlData" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *           &lt;element name="operName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *           &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;/sequence>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,8 +37,8 @@ import javax.xml.bind.annotation.XmlType;
     "operName",
     "password"
 })
-@XmlRootElement(name = "createSuspectIris", namespace = "http://www.wk.cn/webservice")
-public class CreateSuspectIris {
+@XmlRootElement(name = "createSuspectIrisRequest", namespace = "http://www.wk.cn/webservice")
+public class CreateSuspectIrisRequest {
 
     @XmlElement(namespace = "http://www.wk.cn/webservice", required = true)
     protected String xmlData;

@@ -33,8 +33,8 @@ import javax.xml.bind.annotation.XmlType;
     "errorCode",
     "errorDescriptiion"
 })
-@XmlRootElement(name = "WSResultDTO", namespace = "http://www.wk.cn/webservice")
-public class WSResultDTO {
+@XmlRootElement(name = "createSuspectIrisResponse", namespace = "http://www.wk.cn/webservice")
+public class CreateSuspectIrisResponse {
 
     @XmlElement(namespace = "http://www.wk.cn/webservice")
     protected int errorCode;
